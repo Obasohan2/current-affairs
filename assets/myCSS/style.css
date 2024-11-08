@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    ;
+}
+
+/* --------- Heading */
+.heading {
+    text-align: center;
+    display: flexbox;
+    font-size: 2.5rem;
+    margin-top: 5%;
+    position: absolute;
+    top: 0;
+}
+
+/* ---------logo----- */
+.logo {
+    height: 40px;
+    padding-right: 5px;
+
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+/* ---------body-------*/
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.container {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15%;
+    margin-top: 10%;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+
+    #score {
+        color: green;
+        font-weight: bold;
+
+    }
+
+    #incorrect {
+        color: red;
+        font-weight: bold;
+    }
+
+    .scores {
+        display: inline-block;
+        padding: 25px;
+    }

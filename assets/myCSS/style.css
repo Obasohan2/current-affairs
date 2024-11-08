@@ -1,6 +1,6 @@
-*,
-*::before,
-*::after {
+
+
+*, *::before, *::after {
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
     ;
@@ -121,7 +121,7 @@ body.wrong {
     align-items: center;
     margin-left: 35%;
 
-    #score {
+#score {
         color: green;
         font-weight: bold;
 
@@ -136,3 +136,36 @@ body.wrong {
         display: inline-block;
         padding: 25px;
     }
+
+    @media (max-width: 414px) {
+        .controls-area {
+            width: 100%;
+        }
+        .container {
+            padding: 10% 0;
+            width: 100%;
+        }
+        
+        .score-area {
+            width: 100%;
+        }
+    
+        .scores {
+            margin: 0.5em auto;
+            display: block;
+            padding: 5px;
+        }
+        .heading {
+            font-size: 2rem;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .game-area {
+            height: 70vh;
+        }
+        .container {
+                padding: 10px 0;
+            }
+        
+        }

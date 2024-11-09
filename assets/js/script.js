@@ -79,10 +79,103 @@ function clearStatusClass(element) {
 
 const questions = [
     {
+        question: "What is 176 - 18 ?",
+        answers: [
+            { text: "158", correct: true },
+            { text: "138", correct: false },
+            { text: "140", correct: false },
+            { text: "161", correct: false },
+        ]
+    },
+
+    {
+        question: "What is the capital of Spain?",
+        answers: [
+            { text: "Barcelona", correct: false },
+            { text: "Madrid", correct: true },
+            { text: "Alicante", correct: false },
+            { text: "Bilbao", correct: false },
+        ]
+    },
+    {
+        question: "Who is a football player ?",
+        answers: [
+            { text: "Cristiano Ronaldo", correct: true },
+            { text: "Michael Jackson", correct: false },
+            { text: "Hussain Bolt", correct: false },
+            { text: "Joe Biden", correct: false },
+        ]
+    },
+    {
+        question: "Who is president-elect of USA in the Year 2024 ?",
+        answers: [
+            { text: "Donald Trump", correct: true },
+            { text: "Morgan Freeman", correct: false },
+            { text: "Elon Musk", correct: false },
+            { text: "Mohammed Abdul", correct: false },
+        ]
+    },
+    {
+        question: "Who is a known singer ?",
+        answers: [
+            { text: "Bayonce", correct: true },
+            { text: "Mohammed Salah", correct: false },
+            { text: "Alex Ferguson", correct: false },
+            { text: "Alan Shearer", correct: false },
+        ]
+    },
+    {
+        question: "What is the name of UK currency ?",
+        answers: [
+            { text: "Pounds Sterling", correct: true },
+            { text: "Dollar", correct: false },
+            { text: "Naira", correct: false },
+            { text: "Euro", correct: false },
+        ]
+    },
+    {
+        question: "Where is Spain located ?",
+        answers: [
+            { text: "Europe", correct: true },
+            { text: "Africa", correct: false },
+            { text: "Australia", correct: false },
+            { text: "Asia", correct: false },
+        ]
+    },
+    {
+        question: "Who is a boxer ?",
+        answers: [
+            { text: "Anthony Joshua", correct: true },
+            { text: "Harry Kane", correct: false },
+            { text: "Justin Bieber", correct: false },
+            { text: "Rishi Sunak", correct: false },
+        ]
+    },
+    {
+        question: "Where can i find ?",
+        answers: [
+            { text: "4", correct: true },
+            { text: "22", correct: false },
+            { text: "Segovia", correct: false },
+            { text: "Segovia", correct: false },
+        ]
+    },
+    {
         question: "What is 2 + 2 ?",
         answers: [
             { text: "4", correct: true },
-            { text: "22", correct: false }
+            { text: "22", correct: false },
+            { text: "Segovia", correct: false },
+            { text: "Segovia", correct: false },
+        ]
+    },
+    {
+        question: "What is 2 + 2 ?",
+        answers: [
+            { text: "4", correct: true },
+            { text: "22", correct: false },
+            { text: "Segovia", correct: false },
+            { text: "Segovia", correct: false },
         ]
     },
 ]
